@@ -17,3 +17,10 @@ git config [--local] user.email john@doe.com
 ```
 
 :warning: It's recommended to use `--local` because it will help you prevent overwriting global configuration.
+
+Global .gitignore file:
+```
+touch ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+echo '.DS_Store' >> ~/.gitignore_global
+```
