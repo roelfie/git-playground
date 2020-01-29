@@ -4,21 +4,25 @@ GitHub Flavoured Markdown (GFM) [Specs](https://github.github.com/gfm/) and [Che
 
 ## Configuration
 
-Show the origin of configuration (you can do this inside a git project, or in a non-git folder to view only the global settings):
+#### Show origin of configuration 
+
+You can do this inside a git project, or in a non-git folder to view only the global settings:
 ```
 git config --list --show-origin
 ```
 
-Use different name/email per project (--local is default hence optional):
+#### Use different name/email per project 
+
 ```
 cd <project>
 git config [--local] user.name "John Doe"
 git config [--local] user.email john@doe.com
 ```
+`--local` is default hence optional.
 
 :warning: It's recommended to use `--local` because it will help you prevent overwriting global configuration.
 
-Global .gitignore file:
+#### Global .gitignore file:
 ```
 touch ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
